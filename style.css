@@ -1,0 +1,90 @@
+ @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost';
+}
+
+:root{
+    --fundo: linear-gradient(to right, rgb(95, 196, 95), rgb(42, 212, 190) );
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--fundo);
+    color: #fff;
+}
+
+#calculator{
+    background-color: #262626;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.35);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#calculator h2{
+    font-size: 30px;
+    position: relative;
+}
+
+#calculator h2:before{
+    position: absolute;
+    content:'';
+    height: 3px;
+    width: 100px;
+    background: var(--fundo);
+    bottom: 0px;
+}
+
+#input_box{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input_field{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input_field label{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.input_field input{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    border-bottom:rgb(42, 212, 190) 2px solid;
+}
+.input_field input:focus{
+    outline: none;
+}
+.result{
+    text-align: center;
+}
+#total{
+    font-size: 40px;
+}
+#calculate{
+    background: var(--fundo);
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    padding:10px;
+}

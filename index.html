@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Juros Compostos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.wikisporting.com/images/5/55/Calculadora.png" type="image/x-icon">
+</head>
+
+<body>
+    <main id="container">
+        <div id="calculator">
+            <h2>Calculadora de Juros Compostos</h2>
+            <div id="input_box">
+                <div class="input_field"><label for="value">Valor Inicial:</label>
+                    <input type="number" id="value">
+                </div>
+                <div class="input_field"><label for="fee">Taxa de Juros por mês:</label>
+                    <input type="number" id="fee">
+                </div>
+                <div class="input_field"><label for="time">Tempo de Rendimento por mês:</label>
+                    <input type="number" id="time">
+                </div>
+            </div>
+            <div class="result">
+                <h4>Resultado</h4>
+                <span id="total">R$ 0,00</span>
+            </div>
+            <button id="calculate">
+                Calcular
+            </button>
+        </div>
+    </main>
+<script src="script.js"></script>
+</body>
+
+</html>
